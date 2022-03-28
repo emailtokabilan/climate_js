@@ -29,7 +29,7 @@
 
 
                 <h3>Enter Pincode...</h3>
-                <form id="submit-btn" class="form-inline" name="climate" onsubmit="return searchShow()">
+                <form id="submit-btn" class="form-inline" name="climate" onsubmit="searchShow(pincode)">
                     <input type="search" placeholder="Search" id="searchField" name="pincode" aria-label="Search">
                     <button id="submit-btn" type="submit">Search</button>
                 </form>
@@ -42,14 +42,14 @@
                 <div class="detail">
 
                     <div class="row ">
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <p class="light-text">Cloudy</p>
                             <p class="light-text">Humidity</p>
                             <p class="light-text">Wind</p>
                             <p class="light-text">Temperature</p>
                             <p class="light-text">Timezone</p>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <p id="dt_cloudy">--%</p>
                             <p id="dt_humidity">--%</p>
                             <p id="dt_wind">--km/h</p>

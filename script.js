@@ -1,5 +1,5 @@
 
-function searchShow(pincode) {
+ function searchShow(pincode) {
 
 
 
@@ -20,22 +20,29 @@ function searchShow(pincode) {
             document.getElementById("dt_name").innerHTML = data.name;
             document.getElementById("dt_country").innerHTML = data.sys.country;
 
+            document.getElementById("submit-btn").addEventListener("click", function(event){
+                event.preventDefault()
+              });
+
 
         });
 
 
 
 }
-function myFunction(e) {
-    e.preventDefault();
-}
 
-window.onload = () => {
+
+
+
+
+
+window.onclick = () => {
 
     const searchFieldElement = document.getElementById("searchField");
     searchFieldElement.onkeyup = () => {
         searchShow(searchFieldElement.value);
     };
+    
 }
 
 
